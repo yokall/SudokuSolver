@@ -14,10 +14,16 @@ public class Main {
                 {0, 0, 0, 0, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0},};
+                {0, 0, 0, 0, 0, 0, 0, 0, 0}};
 
         Board board = new Board(grid);
 
-        board.printGrid();
+        System.out.println("Unsolved board");
+        board.print();
+
+        board.solve();
+
+        System.out.println("\nSolved board");
+        board.print();
     }
 }
